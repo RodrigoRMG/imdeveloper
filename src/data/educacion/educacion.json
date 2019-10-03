@@ -1,0 +1,19 @@
+{
+    "data": {
+      "educacion": [
+        {
+            "title": "Colegio de bachilleres de Chiapas plantel 25",
+            "date": "2007 - 2010",
+            "address": "Carretera Chilon 115 yajalon Km 115 Chilón, Chiapas."
+        },
+        {
+            "title": "Universidad tecnológica de la selva",
+            "date": "2010 - 2014",
+            "address": "Entronque Toniná Km. 0.5 Carretera Ocosingo-Altamirano, Ocosingo, Chiapas"
+        }
+      ]
+    },
+    "errors": [
+      
+    ]
+  }

@@ -70,6 +70,12 @@
 	@apply pl-2;
 	@apply pr-4;
 }
+.codeGray{
+	color: #FFF;
+	@apply text-xl;
+	@apply pl-2;
+	@apply pr-4;
+}
 .fileSelected{
 	background-color: #3f3f46;
 }
