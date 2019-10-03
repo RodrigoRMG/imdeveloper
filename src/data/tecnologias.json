@@ -1,0 +1,56 @@
+{
+    "data": {
+      "email": "rodrigo_2392@hotmail.com",
+      "username": "Rodrigo Méndez",
+      "tecnologias": [
+        {
+          "title": "Laravel",
+          "experience": "4 años",
+          "type": "PHP"
+        },
+        {
+          "title": "Express",
+          "experience": "3 años",
+          "type": "Javascript"
+        },
+        {
+          "title": "Next JS",
+          "experience": "1 año",
+          "type": "Javascript"
+        },
+        {
+          "title": "React JS",
+          "experience": "3 años",
+          "type": "Javascript"
+        },
+        {
+          "title": "React Native",
+          "experience": "3 años",
+          "type": "Javascript"
+        },
+        {
+          "title": "Firebase",
+          "experience": "2 años",
+          "type": "Plataforma móvil"
+        },
+        {
+          "title": "Graphql",
+          "experience": "1 año",
+          "type": "Consulta de datos"
+        },
+        {
+          "title": "Mysql",
+          "experience": "4 año",
+          "type": "BD"
+        },
+        {
+          "title": "Mongo DB",
+          "experience": "2 año",
+          "type": "BD"
+        }
+      ]
+    },
+    "errors": [
+      
+    ]
+  }
