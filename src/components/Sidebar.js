@@ -42,7 +42,7 @@ export default () => {
                 </div>
             </ul>
         </div>
-        <div className="tabbar w-screen h-screen md:w-4/5 flex-shrink-0 overflow-scroll">
+        <div className="tabbar w-screen h-screen md:w-4/5 flex-shrink-0">
             <TabBar showMenu={showMenu} setShowMenu={()=>setShowMenu(!showMenu)} index={activeIndexmenu} changeIndex={(index)=>setActiveIndexmenu(index)}/>
         </div>
         </>

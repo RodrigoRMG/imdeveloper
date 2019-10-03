@@ -16,7 +16,7 @@ export default (props) => {
     const filesList = data.archivosJson.data.archivos
     return (
         <>
-        <ul className="flex principalBar">
+        <ul className="flex  overflow-scroll principalBar">
             
             <li className="-mb-px mr-1 flex-shrink-0 sm:hidden">
                 <a onClick={()=>props.setShowMenu()} className="tabtitle cursor-pointer text-white inline-block  rounded-t py-2 pl-4 pr-8">
