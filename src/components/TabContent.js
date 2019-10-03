@@ -16,15 +16,12 @@ export default (props) => {
             return <Experiencia/>
             
         case 2:
-            return <Tecnologias/>
-            
-        case 3:
             return <Educacion/>
 
-        case 4:
+        case 3:
             return <Contacto/>
 
-        case 5:
+        case 4:
             return <Acerca/>
             
     }

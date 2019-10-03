@@ -10,20 +10,16 @@
           "index": 1
         },
         {
-          "title": "Tecnologias.js",
+          "title": "Educacion.js",
           "index": 2
         },
         {
-          "title": "Educacion.js",
+          "title": "Contacto.js",
           "index": 3
         },
         {
-          "title": "Contacto.js",
-          "index": 4
-        },
-        {
           "title": "Acerca.js",
-          "index": 5
+          "index": 4
         }
       ]
     }
