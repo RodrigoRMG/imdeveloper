@@ -14,11 +14,12 @@ export default () => {
         }
     }`)
     const filesList = data.archivosJson.data.archivos
+    const [showMenu,setShowMenu] = useState(false);
     const [expanded,setExpanded] = useState(true);
     const [activeIndexmenu,setActiveIndexmenu] = useState(0);
     return (
         <>
-        <div className="sidebar w-1/5 h-screen hidden md:block flex-shrink-0" style={{minWidth:200}}>
+        <div className={`sidebar w-1/5 h-screen ${!showMenu?"hidden":""} md:block flex-shrink-0`} style={{minWidth:200}}>
             <ul className="">
                 <li className="mt-1">
                     <a className="py-2 px-4 font-semibold text-white" onClick={()=>setExpanded(!expanded)}>
@@ -39,11 +40,10 @@ export default () => {
                         ))
                     }
                 </div>
-                
-        </ul>
+            </ul>
         </div>
         <div className="tabbar w-screen h-screen md:w-4/5 flex-shrink-0">
-            <TabBar index={activeIndexmenu} changeIndex={(index)=>setActiveIndexmenu(index)}/>
+            <TabBar setShowMenu={()=>setShowMenu(!showMenu)} index={activeIndexmenu} changeIndex={(index)=>setActiveIndexmenu(index)}/>
         </div>
         </>
     )

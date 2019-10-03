@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, grap, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import TabContent from "./TabContent"
 
 export default (props) => {
@@ -17,6 +17,12 @@ export default (props) => {
     return (
         <>
         <ul className="flex overflow-y-scroll principalBar">
+            
+            <li className="-mb-px mr-1 flex-shrink-0 sm:hidden">
+                <a onClick={()=>props.setShowMenu()} className="tabtitle cursor-pointer text-white inline-block  rounded-t py-2 pl-4 pr-8">
+                    <span className="text-white font-bold">☰</span>
+                </a>
+            </li>
             {
                 filesList.map(file => (
                     <li className="-mb-px mr-1 flex-shrink-0">
@@ -26,8 +32,6 @@ export default (props) => {
                     </li>
                 ))
             }
-            
-            
         </ul>
         <TabContent index={props.index} />
         </>
