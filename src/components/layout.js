@@ -24,16 +24,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <main>{children}</main>
-      <div className="footer flex text-right flex-row-reverse">
-      <a className="text-white mr-6  p-1">Idioma: Español</a>
-        <span className="text-white mr-6  p-1 hidden md:block">Spaces: 2</span>
-        <span className="text-white mr-6  p-1 hidden md:block">UTF-8</span>
-        <span className="text-white mr-6  p-1 hidden md:block">Javascript</span>
-        <div class="downArrow bounce hidden md:block" >
-        <span class="arrow"><span></span><span></span></span>
-        </div>
-        
-      </div>
+     
     </>
   )
 }
