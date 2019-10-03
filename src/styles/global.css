@@ -46,3 +46,27 @@
     left: -0.15em;
 	transform: rotate(135deg);
 }
+
+.comment {
+	color: #a3a3a3;
+	@apply text-xl;
+}
+.codePurple{
+	color: #d368ce;
+	@apply text-xl;
+}
+
+.codeBlue{
+	color: #75b0d4;
+	@apply text-xl;
+}
+.codeOrange{
+	color: #ce9178;
+	@apply text-xl;
+}
+.codeWhite{
+	color: #828282;
+	@apply text-xl;
+	@apply pl-2;
+	@apply pr-4;
+}
