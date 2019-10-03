@@ -3,3 +3,44 @@
 @tailwind components;
 
 @tailwind utilities;
+
+
+::-webkit-scrollbar {
+    display: none;
+    }
+
+.sidebar{
+    background-color: #252526;
+}
+.tabtitleactive{
+    background-color: #1e1e1e;
+}
+.tabbar{
+    background-color: #1e1e1e;
+}
+.tabtitle{
+    background-color: #2d2d2d;
+}
+.chevron::before {
+	border-style: solid;
+	border-width: 0.1em 0.1em 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.45em;
+	left: 0.15em;
+	position: relative;
+	top: 0.50em;
+	transform: rotate(-45deg);
+	vertical-align: top;
+	width: 0.45em;
+}
+
+.chevron.right:before {
+	left: -0.15em;
+	transform: rotate(45deg);
+}
+.chevron.bottom:before {
+    top: 0.50em;
+    left: -0.15em;
+	transform: rotate(135deg);
+}
