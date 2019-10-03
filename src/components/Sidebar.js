@@ -1,7 +1,19 @@
 import React, { useEffect, useState } from "react"
+import { useStaticQuery, grap, graphql } from "gatsby"
 import TabBar from "./TabBar"
 
 export default () => {
+    const data = useStaticQuery(graphql`{
+        archivosJson {
+            data {
+              archivos {
+                index
+                title
+              }
+            }
+        }
+    }`)
+    const filesList = data.archivosJson.data.archivos
     const [expanded,setExpanded] = useState(true);
     const [activeIndexmenu,setActiveIndexmenu] = useState(0);
     return (
@@ -17,36 +29,15 @@ export default () => {
                         </a>
                 </li>
                 <div className={!expanded?"hidden":""}>
-                    <li className="mt-1 pl-8">
-                        <a onClick={()=>setActiveIndexmenu(0)} className="cursor-pointer py-2 px-4  text-white">
-                            <span className="text-yellow-400 font-bold">JS</span> index.js
-                        </a>
-                    </li>
-                    <li className="mt-1 pl-8">
-                        <a onClick={()=>setActiveIndexmenu(1)} className="cursor-pointer py-2 px-4  text-white">
-                            <span className="text-yellow-400 font-bold">JS</span> Experiencia.js
-                        </a>
-                    </li>
-                    <li className="mt-1 pl-8">
-                        <a onClick={()=>setActiveIndexmenu(2)} className="cursor-pointer py-2 px-4 text-white">
-                            <span className="text-yellow-400 font-bold">JS</span> Tecnologias.js
-                        </a>
-                    </li>
-                    <li className="mt-1 pl-8">
-                        <a onClick={()=>setActiveIndexmenu(3)} className="cursor-pointer py-2 px-4 text-white">
-                            <span className="text-yellow-400 font-bold">JS</span> Educacion.js
-                        </a>
-                    </li>
-                    <li className="mt-1 pl-8">
-                        <a onClick={()=>setActiveIndexmenu(4)} className="cursor-pointer py-2 px-4 text-white">
-                            <span className="text-yellow-400 font-bold">JS</span> Contacto.js
-                        </a>
-                    </li>
-                    <li className="mt-1 pl-8">
-                        <a onClick={()=>setActiveIndexmenu(5)} className="cursor-pointer py-2 px-4 text-white">
-                            <span className="text-yellow-400 font-bold">JS</span> Acerca.js
-                        </a>
-                    </li>
+                    {
+                        filesList.map(file => (
+                            <li className={`mt-1 pl-8 ${activeIndexmenu==file.index?"fileSelected":""}`}>
+                                <a onClick={()=>setActiveIndexmenu(file.index)} className="cursor-pointer py-2 px-4  text-white">
+                                    <span className="text-yellow-400 font-bold">JS</span> {file.title}
+                                </a>
+                            </li>
+                        ))
+                    }
                 </div>
                 
         </ul>

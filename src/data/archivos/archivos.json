@@ -1,0 +1,30 @@
+{
+    "data": {
+      "archivos": [
+        {
+          "title": "index.js",
+          "index": 0
+        },
+        {
+          "title": "Experiencia.js",
+          "index": 1
+        },
+        {
+          "title": "Tecnologias.js",
+          "index": 2
+        },
+        {
+          "title": "Educacion.js",
+          "index": 3
+        },
+        {
+          "title": "Contacto.js",
+          "index": 4
+        },
+        {
+          "title": "Acerca.js",
+          "index": 5
+        }
+      ]
+    }
+  }
