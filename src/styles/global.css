@@ -111,7 +111,7 @@
 .downArrow{
 	position: fixed;
 	bottom: 30px;
-	right: 4em;
+	right: 3em;
 }
 .bounce {
 	-moz-animation: bounce 3s infinite;
